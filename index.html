@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>2 Factor Codes</title>
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="./jsOTP.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="./secrets.js"></script>
+</head>
+<body onload="main.start(secrets)">
+  <h1 id="header">2 Factor Authentication Codes</h1>
+  <div id="codes"></div>
+  <div id="timer">
+    <div id="timer-bar"></div>
+  </div>
+  <div id="errors" class="error"></div>
+  <div><button onclick="main.generate()">Generate</button></div>
+</body>
+</html>
